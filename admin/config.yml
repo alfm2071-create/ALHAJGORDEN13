@@ -1,0 +1,49 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "settings"
+    label: "Pengaturan Toko"
+    files:
+      - label: "Toko & Kontak"
+        name: "store"
+        file: "content/settings.json"
+        format: "json"
+        fields:
+          - {label: "Nama Toko", name: "storeName", widget: "string"}
+          - {label: "Judul Utama", name: "heroTitle", widget: "string"}
+          - {label: "Deskripsi Utama", name: "heroDescription", widget: "text"}
+          - {label: "WhatsApp", name: "whatsapp", widget: "string"}
+          - {label: "Link Shopee", name: "shopee", widget: "string"}
+          - {label: "Link TikTok Shop", name: "tiktok", widget: "string"}
+          - {label: "Foto Utama", name: "heroImage", widget: "image", required: false}
+
+  - name: "products"
+    label: "Produk"
+    files:
+      - label: "Daftar Produk"
+        name: "product-list"
+        file: "content/products.json"
+        format: "json"
+        fields:
+          - label: "Produk"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.category}}"
+            fields:
+              - {label: "Nama Produk", name: "title", widget: "string"}
+              - {label: "Kategori", name: "category", widget: "string"}
+              - {label: "Harga / Keterangan Harga", name: "price", widget: "string", required: false}
+              - {label: "Deskripsi", name: "description", widget: "text", required: false}
+              - label: "Foto Produk"
+                name: "images"
+                widget: "list"
+                required: false
+                field: {label: "Foto", name: "image", widget: "image"}
+              - {label: "Link Shopee", name: "shopee", widget: "string", required: false}
+              - {label: "Link TikTok", name: "tiktok", widget: "string", required: false}
+              - {label: "Produk Unggulan", name: "featured", widget: "boolean", default: false}
