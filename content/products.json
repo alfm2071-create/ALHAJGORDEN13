@@ -9,6 +9,29 @@
       "shopee": "https://s.shopee.co.id/1VzRc4gQI5",
       "tiktok": "https://vt.tiktok.com/ZS9AgM38BEdgA-EXWlL/",
       "featured": true
+    }{
+  "products": [
+    {
+      "title": "Gorden Blackout Model Semokring",
+      "category": "Gorden Blackout",
+      "price": "Hubungi kami untuk harga",
+      "description": "Gorden blackout model semokring dengan tampilan elegan dan cocok untuk berbagai ruangan.",
+      "images": ["WhatsApp Image 2026-09-24 at 23.46.54.jpeg"],
+      "shopee": "https://shopee.co.id/...",
+      "tiktok": "https://vt.tiktok.com/...",
+      "featured": true
+    },
+    {
+      "title": "Gorden Minimalis Polos",
+      "category": "Gorden Minimalis",
+      "price": "Hubungi kami untuk harga",
+      "description": "Gorden minimalis bahan tebal dan halus, bikin ruangan makin estetik.",
+      "images": ["nama-foto-kedua.jpg"],
+      "shopee": "https://shopee.co.id/...",
+      "tiktok": "https://vt.tiktok.com/...",
+      "featured": false
     }
+  ]
+}
   ]
 }
